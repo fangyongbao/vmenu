@@ -1,0 +1,40 @@
+.u-vmenu ul li {
+	width: 311px;
+	list-style: none;
+}
+.u-vmenu ul ul{
+	display: none;
+}
+.u-vmenu > ul > li {
+	background: url(../images/vmenu/zakladka.png) left top no-repeat;
+	background-size: 100% auto;
+}
+.u-vmenu ul li a {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	font-size: 14px;
+	color: #82846f;
+	text-decoration: none;
+	outline: none;
+}
+.u-vmenu > ul > li > a {
+	height: 42px;
+	line-height: 42px;
+	padding-left: 35px;
+}
+.u-vmenu > ul > li > ul > li > a {
+	padding-left: 70px;
+}
+.u-vmenu > ul > li > ul > li > ul > li > a {
+	padding-left: 100px;
+}
+.u-vmenu > ul > li > ul > li > ul > li > ul > li > a {
+	padding-left: 135px;
+}
+.u-vmenu ul li a[data-option='on']{
+	background: url(../images/vmenu/on.png) right center no-repeat;
+}
+.u-vmenu ul li a[data-option='off'] {
+	background: url(../images/vmenu/off.png) right center no-repeat;
+}

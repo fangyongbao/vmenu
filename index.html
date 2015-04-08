@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery/Zepto垂直下拉多级菜单</title>
+		<link rel="stylesheet" type="text/css" href="css/vmenuModule.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="content">
+			<div class="u-vmenu">
+				<ul>
+					<li>
+						<a href="#">Item 1</a>
+						<ul>
+							<li><a href="#">Subitem 1</a>
+							</li>
+							<li>
+								<a href="#">Subitem 2</a>
+								<ul>
+									<li><a href="#">Subitem 1</a>
+										<ul>
+											<li><a href="#">Subitem 1</a>
+											</li>
+											<li><a href="#">Subitem 2</a>
+											</li>
+											<li><a href="#">Subitem 3</a>
+											</li>
+											<li><a href="#">Subitem 4</a>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">Subitem 2</a>
+									</li>
+									<li><a href="#">Subitem 3</a>
+									</li>
+									<li><a href="#">Subitem 4</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Subitem 3</a>
+							</li>
+							<li>
+								<a href="#">Subitem 4</a>
+								<ul>
+									<li><a href="#">Subitem 1</a>
+									</li>
+									<li><a href="#">Subitem 2</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Subitem 5</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Item 2</a>
+						<ul>
+							<li><a href="#">Subitem 1</a>
+							</li>
+							<li><a href="#">Subitem 2</a>
+							</li>
+							<li><a href="#">Subitem 3</a>
+							</li>
+							<li><a href="#">Subitem 4</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Item 3</a>
+						<ul>
+							<li><a href="#">Subitem 1</a>
+							</li>
+							<li><a href="#">Subitem 2</a>
+							</li>
+							<li><a href="#">Subitem 3</a>
+							</li>
+							<li><a href="#">Subitem 4</a>
+							</li>
+							<li><a href="#">Subitem 5</a>
+							</li>
+							<li><a href="#">Subitem 6</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Item without subitems</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/vmenuModule.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".u-vmenu").menu({
+					Speed: 200,
+					autostart: true,
+					autohide: true
+				});
+			});
+		</script>
+	</body>
+
+</html>
