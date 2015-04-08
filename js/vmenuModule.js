@@ -20,7 +20,7 @@
  *
  */
 (function($) {
-	$.fn.menu = function(option) {
+	$.fn.vmenuModule = function(option) {
 		var obj,
 			item;
 		var options = $.extend({
